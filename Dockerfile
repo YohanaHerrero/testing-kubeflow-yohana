@@ -1,7 +1,7 @@
 # Step 1: Start from an official Python image (a slim version of python3.9)
 FROM python:3.9-slim
 
-# Step 2: Set the working directory in the container (all commands will be run in there)
+# Step 2: Set the working directory in the container (all commands will be run in there). Docker will create the folder, if it does not exist
 WORKDIR /example 
 
 # Step 3: Copy the current directory contents into the container
